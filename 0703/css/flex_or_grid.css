@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.flex_practice div{
+    padding:10px;
+    background: #0bd;
+    border: 1px solid black;
+}
+
+.grid_practice div{
+    padding:10px;
+    width:100%;
+    aspect-ratio: 1/1;
+    background: #0ef;
+    border: 1px solid black;
+}
