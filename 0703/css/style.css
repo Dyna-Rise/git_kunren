@@ -3,13 +3,13 @@ body{
     margin:0;
 }
 
-
 h1{
     background: #000; /*背景色*/
     color: #fff; /*文字色*/
     text-align: center; /*文字を中央揃え */
     font-size: 48px; /*文字の大きさを48px*/
     padding:40px; /*左右上下まとめて40px*/
+    margin-top: 0; /*上の隙間をなくす*/
 }
 
 header ul{
@@ -74,6 +74,8 @@ footer div div{
 /* footerの直接的な子供のdivのみ */
 footer>div{
     display: flex;
+    gap:20px;
+    margin-bottom: 50px;
 }
 
 footer p{
