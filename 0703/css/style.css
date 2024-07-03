@@ -110,3 +110,14 @@ section{
     /* 上top 下bottom 左left 右right */
 }
 
+.title_menu{
+    /* text-decoration: underline; */
+    /*下線の装飾*/
+
+    border-bottom:3px #f00 solid;
+}
+
+.title_concept{
+    /*枠線：太さ 色 線種 ※順不同*/
+    border:5px #000 solid;
+}
