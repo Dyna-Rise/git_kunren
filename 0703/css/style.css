@@ -115,9 +115,25 @@ section{
     /*下線の装飾*/
 
     border-bottom:3px #f00 solid;
+    border-right: 6px #f00 solid;
+    background: #faa;
+    /*全体指定*/
+    /*上 右 下 左*/
+    /*上下 左右*/
+    /* 上 左右 下 */
+    padding:20px 0;
 }
 
 .title_concept{
     /*枠線：太さ 色 線種 ※順不同*/
     border:5px #000 solid;
+    padding: 40px 0;
+}
+
+.face{
+    /* 角を丸くする 50%にすると円*/
+    border-radius: 50%;
+    width: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
