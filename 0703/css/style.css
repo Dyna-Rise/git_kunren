@@ -28,6 +28,7 @@ header img{ /*headerのimgだけ指定*/
 
 main{ 
     width: 80%; /*メインコンテンツの幅を絞る*/
+    max-width: 600px; /*最大値の制約をつける*/
     /* 上下0 左右auto */
     /* margin:0 auto;*/
 
