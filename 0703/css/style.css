@@ -49,6 +49,28 @@ h2{
     text-align: center; /*小見出しを中央揃え*/
 }
 
+main section:first-child div{
+    /* gridを使って整列させる */
+    display: grid; /*これ単体だと意味がない*/
+    /* grid宣言したものの横の並びの幅と数を指定 */
+    /* grid-template-columns: 100px 100px 100px; */
+    /*比率 1対1対1 */
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    gap:15px;
+
+    /* grid宣言したものの縦の幅を指定 */
+    /* grid-template-rows: 100px 100px; */
+}
+
+main section:first-child div img{
+    width: 100%;
+    /* height: 100%; */
+    aspect-ratio: 1/1; /*幅にあわせた高さのアスペクト比*/
+    object-fit: cover; /*定義された縦横サイズの中で縦横比を崩さないように自動でトリミング*/
+}
+
+
 /* ">"は直接的な子要素に限定する*/
 main section:last-child>div{ /*mainの中の2番目の要素のsectionの中のdiv（直接的な子要素のみ）*/
     /*background: #aaa;*/
