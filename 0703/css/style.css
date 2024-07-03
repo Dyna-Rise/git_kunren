@@ -1,0 +1,88 @@
+body{
+    /* 初期デザインのmarginを打ち消し*/
+    margin:0;
+}
+
+
+h1{
+    background: #000; /*背景色*/
+    color: #fff; /*文字色*/
+    text-align: center; /*文字を中央揃え */
+    font-size: 48px; /*文字の大きさを48px*/
+    padding:40px; /*左右上下まとめて40px*/
+}
+
+header ul{
+    display: flex; /*子要素を横並びにする*/
+    gap:20px; /*隙間20px*/
+    list-style:none; /*マーカーをなくす*/
+    justify-content:center;
+    /*flexで配置したものたちを中央に配置しなおす*/
+}
+
+header img{ /*headerのimgだけ指定*/
+    width: 100%; /*幅 親要素いっぱい*/
+    height:600px;/*高さ 600px*/
+    object-fit: cover;/*縦横比に合わせて自動調整*/
+}
+
+main{ 
+    width: 80%; /*メインコンテンツの幅を絞る*/
+    /* 上下0 左右auto */
+    /* margin:0 auto;*/
+
+    /* 上0 右auto 下100px 左auto */
+    /* margin:0 auto 100px auto; */
+
+    /* 上0 左右auto 下100px */
+    margin:0 auto 100px;
+
+    /* padding:40px 80px; */
+
+    /* 上下左右が80pxの内余白 */
+    padding:80px;
+
+    background:#ff0;
+}
+
+h2{
+    text-align: center; /*小見出しを中央揃え*/
+}
+
+/* ">"は直接的な子要素に限定する*/
+main section:last-child>div{ /*mainの中の2番目の要素のsectionの中のdiv（直接的な子要素のみ）*/
+    /*background: #aaa;*/
+    display: flex; /*子要素を横並びにする*/
+    gap:40px;/*隙間を40px*/
+}
+
+footer{
+    background: #000;
+    /*フッターの中全般の色を白色にする*/
+    color:#fff;
+    /*内余白 上下80px 左右40px*/
+    padding:80px 40px;
+}
+
+/* footerの孫のdiv */
+footer div div{
+    width: 480px;
+    height:480px;
+    background:#aaa;
+}
+
+/* footerの直接的な子供のdivのみ */
+footer>div{
+    display: flex;
+}
+
+footer p{
+    text-align: center; /*コピーライトを中央揃え*/
+}
+
+section{
+    margin: 0 0 80px;
+    /* margin-bottom:80px; */
+    /* 上top 下bottom 左left 右right */
+}
+
