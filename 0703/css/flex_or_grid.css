@@ -30,6 +30,7 @@
 .grid_practice{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: ?; */
     gap:40px;
     width: 600px;
     margin:100px auto 0;
