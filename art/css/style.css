@@ -25,3 +25,31 @@ li{
     list-style: none;
 }
 
+.wrapper{
+    max-width: 1200px; /*最大でも1200pxまでしか広がらない*/
+    margin: 0 auto;/*左右均等に余白を割り振ってコンテンツを真ん中に配置*/
+    padding: 0 5%;/*左右の内余白をその時の大きさの5%だけ確保*/
+}
+
+.sec-title{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.btn{
+    color: #2a2a2a;
+    border: solid 1px #2a2a2a;/*枠線*/
+    font-size: .75rem;
+    padding: 14px 36px;
+    display:inline-block; /*aの性格とpなどの性格をブレンドしたいいとこどりの性格に強制*/
+    margin-top: 30px;
+}
+
+#header{
+    height: 100vh; /*vhとはウィンドウサイズの縦の割合*/
+    background-image: url(../img/mainvisual.jpg); /*背景画像*/
+    background-repeat: no-repeat;/*header内に背景画像を繰り返し配置するかどうか*/
+    margin-bottom: 80px;
+}
+
+
