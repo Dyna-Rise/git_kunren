@@ -1,0 +1,27 @@
+@charset "UTF-8"; /*文字コードにUTF-8を使うという宣言*/
+
+html{
+    /*ブラウザの設定にあわせるための文言*/
+    /*裏設定で基本は16px*/
+    font-size: 100%;
+}
+
+body{
+    font-family: sans-serif; /*ゴシック体が選ばれるように*/
+    font-size: .875rem; /*remはhtmlで指定されているサイズを1remとした相対値*/
+    color: #2a2a2a;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    /*画像の大きさが元からどんなに大きくても、親要素をはみ出すことはしない*/
+    max-width:100%;
+}
+
+li{
+    list-style: none;
+}
+
