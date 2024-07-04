@@ -52,4 +52,29 @@ li{
     margin-bottom: 80px;
 }
 
+#magazine{
+    text-align: center;
+    margin-bottom: 80px; /*次のセクションまでの距離*/
+}
 
+.flex-item{
+    display: flex;
+    margin-top: 40px;
+    gap:10px;
+}
+
+.item{
+    width: 50%;
+}
+
+.item .text{
+    max-width: 290px;
+    background: rgba(0,0,0,.5); /*透明にしている 50%の不透明度*/
+    padding: 15px 0;
+    color: #fff;
+}
+
+.item .title{
+    font-size: 1.25rem;
+    margin-bottom: 2px;
+}
