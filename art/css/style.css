@@ -105,7 +105,55 @@ li{
     background: #f5f5f5;
 }
 
+/*上の方で定義した.sec-titleに対して、margin-bottomの部分だけ上書き*/
 .catalog-antique .sec-title{
     margin-bottom: 40px;
 }
 
+.catalog-antique .flex-item{ /*.itemをまとめているクラス*/
+    display: flex;
+    align-items: center; /*flexの子供たちの縦位置を中央*/
+    gap:40px;
+}
+
+.catalog-antique .item{
+    width: 50%; /*子供の幅を半々に*/
+}
+
+/* :last-child→最後尾の対象物 疑似クラス*/
+.catalog-antique:last-child{
+    margin-bottom: 80px;
+}
+
+#footer{
+    background: #333;
+    font-size: 0.75rem;
+}
+
+#footer .flex-item{
+    display: flex;
+    color: #fff;
+    padding:100px 0;
+    /*space-between→端から端に配置しつつ、均等に並べる*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer .item{
+    /* width: 33.33333%; 三分割 */
+    width: 30%;
+
+    /* background:yellow; */
+}
+
+#footer .item .title{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#footer .copyright{
+    background: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
