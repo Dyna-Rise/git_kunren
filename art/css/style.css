@@ -169,11 +169,43 @@ li{
     padding: 30px 0;
 }
 
-/* 「最大でも」480pxが限界の時 = 画面が小さい */
-@media screen and (max-width:480px){
+/* 「最大でも」600pxが限界の時 = 画面が小さい */
+@media screen and (max-width:600px){
     #magazine .flex-item{
         /* flexは必ずしも横並びだけの指示じゃない */
         /* ※ただし、デフォルトは横並びだった */
         flex-direction: column; /*並び方の指定 rowは横（デフォルト）、columnは縦*/
+    }
+
+    #magazine .item{
+        width: 100%;
+    }
+
+    #fashion{
+        padding-top: 35px;
+        margin-bottom: 50px;
+    }
+
+    .catalog-antique .flex-item{
+        flex-direction: column;
+    }
+
+    .catalog-antique .item{
+        width: 100%;
+    }
+
+    #footer .flex-item{
+        flex-direction: column;
+        padding: 30px;
+        gap:30px;
+    }
+
+    #footer .item{
+        width: 100%;
+    }
+
+    /* 疑似クラスをつかって.itemの先頭要素だけ指定 */
+    #footer .item:first-child{
+        text-align: center;
     }
 }
