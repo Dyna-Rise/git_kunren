@@ -1,0 +1,16 @@
+.q1{
+    width: 1000px;
+    height: 600px;
+    background: #ccc;
+}
+
+.img_q1{
+    width: 100%;
+    height: 100%;
+
+    /*アスペクト比維持 トリミング*/
+    object-fit:cover; 
+
+    /*アスペクト比維持 縮小して画面全表示*/
+    object-fit:contain; 
+}

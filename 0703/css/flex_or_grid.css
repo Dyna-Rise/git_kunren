@@ -12,7 +12,7 @@
 
 .grid_practice div{
     padding:10px;
-    width:100%;
+    /* width:100%; */
     aspect-ratio: 1/1;
     background: #0ef;
     border: 1px solid black;
@@ -32,7 +32,8 @@
     grid-template-columns: 1fr 1fr;
     /* grid-template-rows: ?; */
     gap:40px;
-    width: 600px;
-    margin:100px auto 0;
+    /* width: 600px; */
+    /* margin:100px auto 0; */
+    width:100px auto 0;
     background: #aaa;
 }
