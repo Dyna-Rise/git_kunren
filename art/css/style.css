@@ -49,7 +49,18 @@ li{
     height: 100vh; /*vhとはウィンドウサイズの縦の割合*/
     background-image: url(../img/mainvisual.jpg); /*背景画像*/
     background-repeat: no-repeat;/*header内に背景画像を繰り返し配置するかどうか*/
+    background-size: cover; /*広がり方*/
+    background-position: center top; /*どこに焦点をあてるか 左 上*/
+    position: relative; /*基準点*/
     margin-bottom: 80px;
+}
+
+/* #headerの中のh1 */
+.site-title{
+    position: absolute; /*親基準に対しての絶対点*/
+    top:30px;
+    right:30px;
+    /* background: yellow; */
 }
 
 #magazine{
