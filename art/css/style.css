@@ -168,3 +168,12 @@ li{
     text-align: center;
     padding: 30px 0;
 }
+
+/* 「最大でも」480pxが限界の時 = 画面が小さい */
+@media screen and (max-width:480px){
+    #magazine .flex-item{
+        /* flexは必ずしも横並びだけの指示じゃない */
+        /* ※ただし、デフォルトは横並びだった */
+        flex-direction: column; /*並び方の指定 rowは横（デフォルト）、columnは縦*/
+    }
+}
