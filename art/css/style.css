@@ -65,6 +65,7 @@ li{
 
 .item{
     width: 50%;
+    position: relative; /*相対の基準点*/
 }
 
 .item .text{
@@ -72,6 +73,8 @@ li{
     background: rgba(0,0,0,.5); /*透明にしている 50%の不透明度*/
     padding: 15px 0;
     color: #fff;
+    position: absolute; /*絶対点*/
+    top:40%;
 }
 
 .item .title{
