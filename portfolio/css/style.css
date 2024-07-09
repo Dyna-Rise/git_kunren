@@ -55,6 +55,12 @@ li{
     margin-bottom: 80px;
 }
 
+#header h1{
+    background: #000;
+    padding: 20px 40px;
+    color: #fff;
+}
+
 /* #headerの中のh1 */
 .site-title{
     position: absolute; /*親基準に対しての絶対点*/
