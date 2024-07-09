@@ -77,7 +77,9 @@ li{
 #magazine .flex-item{
     display: flex;
     margin-top: 40px;
-    /* gap:10px; */
+    gap:20px;
+
+    /*対象方向の並び：端にくっつきながら均等に並べる*/
     justify-content: space-between;
 
     /* モノがつまりそうなら折り返しして配置する */
@@ -149,6 +151,36 @@ li{
 .catalog-antique:last-child{
     margin-bottom: 80px;
 }
+
+.catalog-antique li{
+    /*マーカーの復活*/
+    list-style:disc;
+
+    /*マーカーの位置 を内側に*/
+    list-style-position: inside;
+    
+    /*2行目にいってしまった時の字下げ方法*/
+    padding-left: 1.5em; /*まずは全体の位置を1.5em下げる 1emは1文字分*/
+    text-indent: -1.5em; /*先頭の位置のみ、padding-leftで下げた分だけ元に戻す*/
+}
+
+
+/****おまけ dl dt_dd リストに関するデザイン *****/
+.catalog-antique dt{
+    font-weight: bold;
+}
+
+.catalog-antique dd{
+    font-size: .75rem;
+    margin-left: 10px;
+    color: #855;
+}
+
+/*各ddの最後尾にのみクラス名（dd_last)を付与しているのが条件*/
+.catalog-antique .dd_last{
+    margin-bottom: 10px;
+}
+/******************************************/
 
 #footer{
     background: #333;
