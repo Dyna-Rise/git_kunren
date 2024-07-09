@@ -161,9 +161,12 @@ li{
     
     /*2行目にいってしまった時の字下げ方法*/
     padding-left: 1.5em; /*まずは全体の位置を1.5em下げる 1emは1文字分*/
-    text-indent: -1.5em; /*先頭の位置のみ、padding-leftで下げた分だけ元に戻す*/
+    text-indent: -1.5em;/* 先頭の位置のみ、padding-leftで下げた分だけ元に戻す*/
 }
 
+.catalog-antique p{
+    margin-bottom: 10px;
+}
 
 /****おまけ dl dt_dd リストに関するデザイン *****/
 .catalog-antique dt{
@@ -190,7 +193,7 @@ li{
 #footer .flex-item{
     display: flex;
     color: #fff;
-    padding:100px 0;
+    padding:100px 20px;
     /*space-between→端から端に配置しつつ、均等に並べる*/
     justify-content: space-between;
     align-items: center;
@@ -214,6 +217,12 @@ li{
     text-align: center;
     padding: 30px 0;
 }
+
+#footer .item a{
+    color: #fff;
+}
+
+
 
 /* 「最大でも」600pxが限界の時 = 画面が小さい */
 @media screen and (max-width:600px){
